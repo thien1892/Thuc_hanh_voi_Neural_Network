@@ -44,7 +44,8 @@ Nhưng với các siêu tham số như: số lớp ẩn, số nút ở mỗi l�
 
 ## Dữ liệu 2: Digis_dataset
 
-Dữ liệu chữ viết tay của thư viện sklearn, số dữ liệu nhỏ nên với mô hình logistic regression cũng cho độ chính xác cao qua các vòng lặp --> nên chắc ko cần đến mô hình NN nhiều lớp :)), đoạn code chỗ chuẩn hóa dữ liệu thấy rất stupid :))
+Dữ liệu chữ viết tay của thư viện sklearn, số dữ liệu nhỏ nên với mô hình logistic regression cũng cho độ chính xác cao qua các vòng lặp --> nên chắc ko cần đến mô hình NN nhiều lớp :)), đoạn code chỗ chuẩn hóa dữ liệu thấy rất stupid:))
+
 <img src ='https://i.imgur.com/zfKnh5I.jpg'>
 
 Ví dụ sau 1000 vòng lặp với learning_rate = 0.005, ta có:
