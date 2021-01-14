@@ -5,24 +5,29 @@
     1. Khởi tạo tham số:
         '''def initialize_parameters(n_x, n_h, n_y):
         ...
-        return parameters'''
+        return parameters
+        '''
     ## Ta sử dụng vòng lặp tối ưu hàm mất mát để cập nhật tham số qua các hàm:
     2. Truyền xuôi:
         '''def linear_activation_forward(A_prev, W, b, activation):
         ...
-        return A, cache'''
+        return A, cache
+        '''
     3. Hàm mất mát:
         '''def compute_cost(AL, Y):
         ...
-        return cost'''
+        return cost
+        '''
     4.  Truyền ngược:
         '''def linear_activation_backward(dA, cache, activation):
         ...
-        return dA_prev, dW, db'''
+        return dA_prev, dW, db
+        '''
     5. Update tham số:
         '''def update_parameters(parameters, grads, learning_rate):
         ...
-        return parameters'''
+        return parameters
+        '''
 
 # Thực hành mô hình Neural Network trên một số nguồn dữ liệu thu thập được.
 
