@@ -7,12 +7,12 @@
         ...
         return parameters
     ## Ta sử dụng vòng lặp tối ưu hàm mất mát để cập nhật tham số qua các hàm:
+    '''sh
     2. Truyền xuôi:
-'''
-def linear_activation_forward(A_prev, W, b, activation):
-...
-return A, cache
-'''
+        def linear_activation_forward(A_prev, W, b, activation):
+        ...
+        return A, cache
+
     3. Hàm mất mát:
         def compute_cost(AL, Y):
         ...
@@ -27,7 +27,7 @@ return A, cache
         def update_parameters(parameters, grads, learning_rate):
         ...
         return parameters
-
+'''
 # Thực hành mô hình Neural Network trên một số nguồn dữ liệu thu thập được.
 
 ## Dữ liệu 1: Nhận dạng xem bức ảnh là mèo hay không?
