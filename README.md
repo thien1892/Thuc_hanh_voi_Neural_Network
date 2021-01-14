@@ -42,6 +42,15 @@ Với mô hình Neural Network, tôi đã cập nhật được tham số W,b qu
 Nhưng với các siêu tham số như: số lớp ẩn, số nút ở mỗi lớp, hàm kích hoạt(relu? sigmoid?...), tỷ lệ học tập anpha,... những siêu tham số này nên được điều chỉnh ra sao để độ chính xác ngày cảng tăng lên???
 :)) các khóa học sau ở deeplaerning sẽ gải đáp các câu hỏi trên!
 
+## Dữ liệu 2: Digis_dataset
+
+Dữ liệu chữ viết tay của thư viện sklearn, số dữ liệu nhỏ nên với mô hình logistic regression cũng cho độ chính xác cao qua các vòng lặp --> nên chắc ko cần đến mô hình NN nhiều lớp :)), đoạn code chỗ chuẩn hóa dữ liệu thấy rất stupid :))
+<img src ='https://i.imgur.com/zfKnh5I.jpg'>
+
+Ví dụ sau 1000 vòng lặp với learning_rate = 0.005, ta có:
+<img src = 'https://i.imgur.com/KGdGl3t.jpg'>
+
+
 
 
 

@@ -29,7 +29,7 @@ test_X = test_X.reshape(test_X.shape[0], -1).T /255
 
 # Mo hinh 2 lop an bao gom X -> (Linear -> Relu) * (L-1) -> linear -> Singmoid -> Y_hat
 
-def mo_hinh_nhieu_lop_an(X, Y, lop_an, learning_rate = 0.005, num_iterations = 4000, print_cost = False):
+def mo_hinh_NN(X, Y, lop_an, learning_rate = 0.005, num_iterations = 4000, print_cost = False):
     np.random.seed(1)
     costs = []
     ## Khoi tao tham so
@@ -60,8 +60,7 @@ def mo_hinh_nhieu_lop_an(X, Y, lop_an, learning_rate = 0.005, num_iterations = 4
 
     return parameters
 
-
-parameters = mo_hinh_nhieu_lop_an(train_X, train_Y, [12288,17,9,1], learning_rate= 0.005, num_iterations = 1000 , print_cost = True)
+parameters = mo_hinh_NN(train_X, train_Y, [12288,10,1], learning_rate = 0.005, num_iterations = 1000, print_cost = True)
 pred_train = predict(train_X, train_Y, parameters)
 pred_test = predict(test_X, test_Y, parameters)
 

@@ -434,3 +434,35 @@ def print_mislabeled_images(classes, X, y, p):
         plt.imshow(X[:,index].reshape(64,64,3), interpolation='nearest')
         plt.axis('off')
         plt.title("Prediction: " + classes[int(p[0,index])].decode("utf-8") + " \n Class: " + classes[y[0,index]].decode("utf-8"))
+
+
+def mo_hinh_NN(X, Y, lop_an, learning_rate, num_iterations, print_cost = False):
+    np.random.seed(1)
+    costs = []
+    ## Khoi tao tham so
+    parameters = initialize_parameters_deep(lop_an)
+
+    # Vong lap toi uu hoa
+    for i in range(num_iterations):
+        # Truyen xuoi:
+        Y_hat, caches = L_model_forward(X, parameters)
+        # Tinh ham mat mat:
+        cost = compute_cost(Y_hat, Y)
+        # Truyen nguoc
+        grads = L_model_backward(Y_hat, Y, caches)
+        # Cap nhat tham so:
+        parameters = update_parameters(parameters, grads, learning_rate)
+
+        # In ham mat mat:
+        if print_cost and i % 100 == 0:
+            print ("Cost after iteration %i: %f" %(i, cost))
+        if print_cost and i % 100 == 0:
+            costs.append(cost)
+        
+        plt.plot(np.squeeze(costs))
+    plt.ylabel('cost')
+    plt.xlabel('iterations (per hundreds)')
+    plt.title("Learning rate =" + str(learning_rate))
+    plt.show()
+
+    return parameters
