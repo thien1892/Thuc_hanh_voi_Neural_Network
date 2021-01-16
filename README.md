@@ -47,8 +47,8 @@ Dữ liệu chữ số viết tay, lưu trữ ở thư mục datamnist, với t�
 
 <img src ='https://i.imgur.com/zfKnh5I.jpg'>
    
-Đầu tiên tôi thử với thuật toán phân cụm knn = 5, cho kết quả train_accuracy =; test_accuracy =
-Tôi thử với Deep neural network với 3 lớp ẩn, 2 lớp giữa có số node = 32, 24 , epochs = 5, batch_size = 32, sau 1 thời gian ngắn, cho kết quả như sau: train_accuracy = 97.3; test_accuracy = 96.2
+**Đầu tiên tôi thử với thuật toán phân cụm knn = 5**, cho kết quả train_accuracy = 98; test_accuracy = 96.88   
+**Tiếp theo, Tôi thử với Deep neural network với 3 lớp ẩn, 2 lớp giữa có số node = 128, 64 , epochs = 5, batch_size = 32**, sau 1 thời gian ngắn, cho kết quả như sau: train_accuracy = 98.7; test_accuracy = 97.53
 
 
 
